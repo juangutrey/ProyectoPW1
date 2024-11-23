@@ -34,9 +34,9 @@
     $username = "juan";
     $password = "Corazon.2";
     $dbname = "prueba_bd";
-// Crear conexión
+    // Crear conexión
     $conn = new mysqli($servername, $username, $password, $dbname);
-    Verificar si la conexión fue exitosa
+    //Verificar si la conexión fue exitosa
     if ($conn->connect_error) {
     die("<h1>Error de conexión: " . $conn->connect_error . "</h1>");
     } else {
