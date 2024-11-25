@@ -31,15 +31,17 @@
 
     // Configuración para MV
     $servername = "localhost";
-    $username = "juan";
-    $password = "Corazon.2";
-    $dbname = "gimnasio_db";
+    $username = "huronmarron";
+    $password = "123456";
+    $dbname = "huronmarron";
+    
     // Crear conexión
     $conn = new mysqli($servername, $username, $password, $dbname);
-    //Verificar si la conexión fue exitosa
+    
+    // Verificar si la conexión fue exitosa
     if ($conn->connect_error) {
-    die("<h1>Error de conexión: " . $conn->connect_error . "</h1>");
+        die("<h1>Error de conexión: " . $conn->connect_error . "</h1>");
     } else {
-    echo "<h1></h1>";
+        echo "<h1>Conexión exitosa</h1>";
     }
 ?>
