@@ -33,7 +33,7 @@
     $servername = "localhost";
     $username = "juan";
     $password = "Corazon.2";
-    $dbname = "gimnasio_bd";
+    $dbname = "gimnasio_db";
     // Crear conexión
     $conn = new mysqli($servername, $username, $password, $dbname);
     //Verificar si la conexión fue exitosa
