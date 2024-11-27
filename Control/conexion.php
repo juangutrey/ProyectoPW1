@@ -32,7 +32,7 @@
     // Configuración para MV
     $servername = "localhost";
     $username = "huronmarron";
-    $password = "123456";
+    $password = "123456789";
     $dbname = "huronmarron";
     
     // Crear conexión
