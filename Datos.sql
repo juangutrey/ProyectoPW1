@@ -1,5 +1,6 @@
+
 -- Crear una tabla para los miembros del gimnasio
-CREATE TABLE IF NOT EXISTS `miembro` (
+CREATE TABLE `miembro` (
     `id_miembro` INT(10) UNSIGNED NOT NULL,
     `nombre` VARCHAR(100) NOT NULL,
     `direccion` VARCHAR(255) NOT NULL,
@@ -27,3 +28,4 @@ VALUES
 (1663522552, 'Elena Torres', 'Calle Río 505', '5558901234', 'elena.torres@email.com', '1995-09-05', 'VIP', 'Activa', 'password789');
 
 -- Consultar la tabla para verificar los datos
+SELECT * FROM miembro;
