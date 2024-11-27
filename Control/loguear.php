@@ -1,12 +1,11 @@
+<?php include "./header.php"; ?>
 <?php
+require 'conexion.php'; 
 session_start();
 
 // Recibir datos del formulario
 $id_miembro = $_POST['id_miembro']; 
 $password = $_POST['password']; 
-
-// Verificar los valores recibidos
-var_dump($id_miembro, $password);
 
 // Consulta para verificar credenciales
 $q = "SELECT * FROM miembro WHERE id_miembro = '$id_miembro' AND password = '$password'";
@@ -27,3 +26,5 @@ if (mysqli_num_rows($consulta) > 0) {
 // Para cerrar conexión
 mysqli_close($conexion);
 ?>
+
+<?php include "./footer.php"; ?>

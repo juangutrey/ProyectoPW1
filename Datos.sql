@@ -1,20 +1,27 @@
-
+-- Validar si está la DB
+DROP SCHEMA IF EXISTS `gimnasio_db`;
+-- Crear la DB
+CREATE SCHEMA IF NOT EXISTS `gimnasio_db` 
+-- Asignar el tipo de caracteres 
+DEFAULT CHARACTER SET utf8 COLLATE utf8_spanish2_ci;
+-- Usar la base de datos
+USE `gimnasio_db`;
 -- Crear una tabla para los miembros del gimnasio
-CREATE TABLE `miembro` (
-    `id_miembro` INT(10) UNSIGNED NOT NULL,
-    `nombre` VARCHAR(100) NOT NULL,
-    `direccion` VARCHAR(255) NOT NULL,
-    `telefono` VARCHAR(10) NOT NULL,
-    `email` VARCHAR(100) NOT NULL,
-    `fecha_nacimiento` DATE NOT NULL,
-    `fecha_registro` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    `tipo_membresia` ENUM('Basica', 'Premium', 'VIP') NOT NULL,
-    `estado_cuenta` ENUM('Activa', 'Suspendida', 'Cancelada') NOT NULL DEFAULT 'Activa',
-    `password` VARCHAR(255) NOT NULL,
-    PRIMARY KEY (`id_miembro`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+CREATE TABLE `miembro`(
+        `id_miembro` INT(10) NOT NULL,
+        `nombre` TEXT NOT NULL,
+        `direccion` TEXT NOT NULL,
+        `telefono` VARCHAR(10) NOT NULL,
+        `email` TEXT NOT NULL,
+        `fecha_nacimiento` DATE NOT NULL,
+        `fecha_registro` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        `tipo_membresia` VARCHAR(20) NOT NULL COMMENT 'Ejemplo: Basica, Premium, VIP',
+        `estado_cuenta` VARCHAR(15) NOT NULL DEFAULT 'Activa' COMMENT 'Activa, Suspendida, Cancelada',
+        `password` VARCHAR(20) NOT NULL,
+        
+        PRIMARY KEY (`id_miembro`)
+);
 
--- Insertar registros en la tabla
 INSERT INTO `miembro` (`id_miembro`, `nombre`, `direccion`, `telefono`, `email`, `fecha_nacimiento`, `tipo_membresia`, `estado_cuenta`, `password`)
 VALUES
 (1234567890, 'ADMIN', 'Calle Aragon 333', '5583862755', 'juangurey@gmail.com', '2004-06-05', 'VIP', 'Activa', 'chillguy123'),
@@ -26,6 +33,4 @@ VALUES
 (1899754163, 'María Rodríguez', 'Calle Cielo 303', '5556789012', 'maria.rodriguez@email.com', '1991-03-12', 'VIP', 'Activa', 'password987'),
 (1651651527, 'José Ramírez', 'Avenida Principal 404', '5557890123', 'jose.ramirez@email.com', '1987-01-18', 'Basica', 'Suspendida', 'password654'),
 (1663522552, 'Elena Torres', 'Calle Río 505', '5558901234', 'elena.torres@email.com', '1995-09-05', 'VIP', 'Activa', 'password789');
-
--- Consultar la tabla para verificar los datos
 SELECT * FROM miembro;
