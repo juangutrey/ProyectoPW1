@@ -2,11 +2,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Metaetiquetas que especifican el tipo de documento y el lenguaje de la página -->
+  <!-- tipo de documento y el lenguaje de la página -->
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Gimnasio Aragón</title>
-  <!-- Favicon -->
   <link rel="icon" href="./Media/favicon/favicon.png" type="image/png"/>
 
   <!-- Fuentes y estilos para Materialize -->
@@ -19,7 +18,6 @@
 
   <nav class="red" role="navigation">
     <div class="nav-wrapper container">
-      <!-- Logo del sitio web -->
       <a id="logo-container" href="../index.php" class="brand-logo">Gimnasio Aragón</a>
       
       <!-- Menú de navegación para PC y Tablet -->

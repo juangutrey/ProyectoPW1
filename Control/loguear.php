@@ -30,8 +30,8 @@ if (isset($_POST['telefono']) && isset($_POST['clave'])) {
         $usuario = mysqli_fetch_assoc($consulta);
         
         // Guardar los datos del usuario en la sesión
-        $_SESSION['id_miembro'] = $usuario['id_miembro']; // O cualquier campo que necesites para identificar al usuario
-        $_SESSION['nombre'] = $usuario['nombre']; // O cualquier otro dato que desees almacenar
+        $_SESSION['id_miembro'] = $usuario['id_miembro']; 
+        $_SESSION['nombre'] = $usuario['nombre']; 
 
         // Redirigir a principal.php si el login es correcto
         header("location: ../principal.php");

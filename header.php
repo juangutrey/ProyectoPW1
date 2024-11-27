@@ -2,14 +2,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Metaetiquetas que especifican el tipo de documento y el lenguaje de la página -->
+  <!-- tipo de documento y el lenguaje de la página -->
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Gimnasio Aragón</title>
-  <!-- Favicon -->
   <link rel="icon" href="./Media/favicon/favicon.png" type="image/png"/>
 
-  <!-- Fuentes y estilos para Materialize (biblioteca de CSS y JS) -->
+  <!-- Fuentes y estilos para Materialize -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
