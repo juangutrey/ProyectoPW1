@@ -27,5 +27,3 @@ VALUES
 (1663522552, 'Elena Torres', 'Calle Río 505', '5558901234', 'elena.torres@email.com', '1995-09-05', 'VIP', 'Activa', 'password789');
 
 -- Consultar la tabla para verificar los datos
-SELECT * FROM `miembro`;
-

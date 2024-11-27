@@ -28,4 +28,3 @@ mysqli_close($conexion);
 ?>
 
 <?php include "./footer.php"; ?>
-
