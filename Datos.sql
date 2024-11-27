@@ -33,7 +33,11 @@ VALUES
 (1899754163, 'María Rodríguez', 'Calle Cielo 303', '5556789012', 'maria.rodriguez@email.com', '1991-03-12', 'VIP', 'Activa', 'password987'),
 (1651651527, 'José Ramírez', 'Avenida Principal 404', '5557890123', 'jose.ramirez@email.com', '1987-01-18', 'Basica', 'Suspendida', 'password654'),
 (1663522552, 'Elena Torres', 'Calle Río 505', '5558901234', 'elena.torres@email.com', '1995-09-05', 'VIP', 'Activa', 'password789');
+<<<<<<< HEAD
 SELECT * FROM miembro;
 
 -- Modificar el tipo de dato de id_miembro
 ALTER TABLE miembro MODIFY id_miembro BIGINT;
+=======
+SELECT * FROM miembro;
+>>>>>>> 80dd47957068c793353f0182844eb14d05aed3c9
