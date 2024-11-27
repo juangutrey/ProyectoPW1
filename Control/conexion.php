@@ -12,7 +12,7 @@ $conexion = new mysqli($host_db, $user_name, $user_pass, $db_name);
 if ($conexion->connect_error) {
     die("<h1>Error de conexión: " . $conexion->connect_error . "</h1>");
 } else {
-    echo "<h1></h1>";
+    echo "<h1>Conexion exitosa</h1>";
 }
 // Cerrar conexión
 $conn->close();
